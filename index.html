@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СуперОтвет - платформа вопросов и ответов</title>
+    <meta name="description" content="Получите экспертные ответы на любые вопросы от проверенных специалистов">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="logo-question">?</div>
+                    <div class="logo-check">✓</div>
+                </div>
+                <h1 class="logo-text">СуперОтвет</h1>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Учеба</a></li>
+                    <li><a href="#" class="nav-link">Технологии</a></li>
+                    <li><a href="#" class="nav-link">Здоровье</a></li>
+                    <li><a href="#" class="nav-link">Бизнес</a></li>
+                    <li><a href="#" class="nav-link">Дом</a></li>
+                    <li><a href="#" class="nav-link">Досуг</a></li>
+                </ul>
+            </nav>
+
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"></path>
+                    </svg>
+                    Войти
+                </a>
+                <a href="#" class="btn btn-primary">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Регистрация
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Поисковая строка -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Получите экспертные ответы на любые вопросы</h1>
+            <p class="hero-subtitle">База знаний с проверенными ответами от экспертов на все ваши вопросы</p>
+
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Введите ваш вопрос...">
+                </div>
+                <button class="search-btn">Найти ответ</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">125K+</span>
+                    <span class="stat-label">Ответов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1.5K+</span>
+                    <span class="stat-label">Экспертов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">350K+</span>
+                    <span class="stat-label">Пользователей</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Быстрые ответы</h3>
+                    <p class="feature-text">Получайте ответы на ваши вопросы в течение нескольких минут от экспертов и сообщества</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Проверенные эксперты</h3>
+                    <p class="feature-text">Наши эксперты проходят верификацию и имеют подтвержденный опыт в своих областях</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Активное сообщество</h3>
+                    <p class="feature-text">Присоединяйтесь к сообществу единомышленников, готовых помочь и поделиться знаниями</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные категории -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Популярные категории</h2>
+
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Учеба</h3>
+                    <p class="category-count">2,345 вопросов</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                            <line x1="8" x2="16" y1="21" y2="21"></line>
+                            <line x1="12" x2="12" y1="17" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Технологии</h3>
+                    <p class="category-count">1,987 вопросов</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Здоровье</h3>
+                    <p class="category-count">1,756 вопросов</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Бизнес</h3>
+                    <p class="category-count">1,543 вопросов</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Дом</h3>
+                    <p class="category-count">1,245 вопросов</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Досуг</h3>
+                    <p class="category-count">987 вопросов</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.38 3.46 16 2a4 4 0 0 1 1.46 3.46"></path>
+                            <path d="M9.69 5.83 6 14l-3 3 2-6.5"></path>
+                            <path d="m12.5 2 4.5 9 1.5 1.5-5.5 1.5c-2-2-6-6-6-6l-4-1 1-3.5 8.5-2"></path>
+                            <path d="M18 15c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Путешествия</h3>
+                    <p class="category-count">876 вопросов</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m2 4 3 12h14l3-12-6 4-4-8-4 8-6-4zm3 16h14"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Право</h3>
+                    <p class="category-count">765 вопросов</p>
+                </a>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn btn-outline">
+                    Все категории
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Новые вопросы -->
+    <section class="questions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Новые вопросы</h2>
+                <div class="filter-buttons">
+                    <a href="#" class="btn btn-outline btn-sm">Все вопросы</a>
+                    <a href="#" class="btn btn-outline btn-sm">Без ответа</a>
+                    <a href="#" class="btn btn-outline btn-sm">Популярные</a>
+                </div>
+            </div>
+
+            <div class="questions-list">
+                <div class="question-card">
+                    <div class="question-answers">
+                        <div class="answers-count">3</div>
+                        <p class="answers-label">ответов</p>
+                    </div>
+
+                    <div class="question-content">
+                        <div class="question-meta">
+                            <span class="badge badge-secondary">Открыт</span>
+                            <span class="badge badge-outline">Технологии</span>
+                            <span class="question-time">2 часа назад</span>
+                        </div>
+
+                        <h3 class="question-title">
+                            <a href="#">Как правильно настроить React Router в Next.js приложении?</a>
+                        </h3>
+
+                        <div class="question-info">
+                            <span>Автор: Алексей К.</span>
+                            <span class="dot">•</span>
+                            <span>42 просмотров</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-answers">
+                        <div class="answers-count">5</div>
+                        <p class="answers-label">ответов</p>
+                    </div>
+
+                    <div class="question-content">
+                        <div class="question-meta">
+                            <span class="badge badge-success">Решен</span>
+                            <span class="badge badge-outline">Здоровье</span>
+                            <span class="question-time">4 часа назад</span>
+                        </div>
+
+                        <h3 class="question-title">
+                            <a href="#">Какие витамины лучше принимать при авитаминозе весной?</a>
+                        </h3>
+
+                        <div class="question-info">
+                            <span>Автор: Марина С.</span>
+                            <span class="dot">•</span>
+                            <span>87 просмотров</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-answers">
+                        <div class="answers-count">2</div>
+                        <p class="answers-label">ответов</p>
+                    </div>
+
+                    <div class="question-content">
+                        <div class="question-meta">
+                            <span class="badge badge-secondary">Открыт</span>
+                            <span class="badge badge-outline">Бизнес</span>
+                            <span class="question-time">6 часов назад</span>
+                        </div>
+
+                        <h3 class="question-title">
+                            <a href="#">Как рассчитать налог на самозанятость при работе с иностранными клиентами?</a>
+                        </h3>
+
+                        <div class="question-info">
+                            <span>Автор: Дмитрий В.</span>
+                            <span class="dot">•</span>
+                            <span>35 просмотров</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-answers">
+                        <div class="answers-count">1</div>
+                        <p class="answers-label">ответов</p>
+                    </div>
+
+                    <div class="question-content">
+                        <div class="question-meta">
+                            <span class="badge badge-secondary">Открыт</span>
+                            <span class="badge badge-outline">Учеба</span>
+                            <span class="question-time">8 часов назад</span>
+                        </div>
+
+                        <h3 class="question-title">
+                            <a href="#">Какие документы нужны для поступления в магистратуру в 2025 году?</a>
+                        </h3>
+
+                        <div class="question-info">
+                            <span>Автор: Ольга П.</span>
+                            <span class="dot">•</span>
+                            <span>29 просмотров</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">
+                    Задать свой вопрос
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как это работает</h2>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Задайте вопрос</h3>
+                    <p class="step-description">Опишите свой вопрос максимально подробно, чтобы получить точный ответ</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Получите ответы</h3>
+                    <p class="step-description">Эксперты и участники сообщества предложат свои решения вашего вопроса</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Выберите лучший</h3>
+                    <p class="step-description">Отметьте ответ, который вам помог решить проблему, как лучший</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn btn-orange">Задать вопрос</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Топ экспертов -->
+    <section class="experts">
+        <div class="container">
+            <h2 class="section-title">Топ экспертов</h2>
+
+            <div class="experts-grid">
+                <div class="expert-card">
+                    <div class="expert-avatar">
+                        <img src="https://via.placeholder.com/80" alt="Иван Петров">
+                        <div class="expert-rating">4.9</div>
+                    </div>
+                    <h3 class="expert-name">Иван Петров</h3>
+                    <p class="expert-specialty">Программирование</p>
+                    <div class="expert-stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <p class="expert-answers">342 ответов</p>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-avatar">
+                        <img src="https://via.placeholder.com/80" alt="Елена Смирнова">
+                        <div class="expert-rating">4.8</div>
+                    </div>
+                    <h3 class="expert-name">Елена Смирнова</h3>
+                    <p class="expert-specialty">Медицина</p>
+                    <div class="expert-stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <p class="expert-answers">287 ответов</p>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-avatar">
+                        <img src="https://via.placeholder.com/80" alt="Алексей Иванов">
+                        <div class="expert-rating">4.7</div>
+                    </div>
+                    <h3 class="expert-name">Алексей Иванов</h3>
+                    <p class="expert-specialty">Финансы</p>
+                    <div class="expert-stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="expert-answers">215 ответов</p>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-avatar">
+                        <img src="https://via.placeholder.com/80" alt="Ольга Козлова">
+                        <div class="expert-rating">4.6</div>
+                    </div>
+                    <h3 class="expert-name">Ольга Козлова</h3>
+                    <p class="expert-specialty">Образование</p>
+                    <div class="expert-stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="expert-answers">198 ответов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Что говорят пользователи</h2>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://via.placeholder.com/48" alt="Михаил Д.">
+                        </div>
+                        <div>
+                            <h4 class="testimonial-name">Михаил Д.</h4>
+                            <div class="testimonial-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Получил исчерпывающий ответ на свой вопрос по налогообложению за 15 минут! Эксперты действительно знают свое дело.</p>
+                    <p class="testimonial-date">12 мая 2025</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://via.placeholder.com/48" alt="Анна К.">
+                        </div>
+                        <div>
+                            <h4 class="testimonial-name">Анна К.</h4>
+                            <div class="testimonial-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Задала сложный вопрос по программированию, получила не только ответ, но и подробное объяснение. Очень довольна!</p>
+                    <p class="testimonial-date">5 мая 2025</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://via.placeholder.com/48" alt="Сергей В.">
+                        </div>
+                        <div>
+                            <h4 class="testimonial-name">Сергей В.</h4>
+                            <div class="testimonial-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Быстрые и точные ответы. Помогли разобраться с юридическим вопросом, который не могла решить неделю.</p>
+                    <p class="testimonial-date">28 апреля 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сообщество -->
+    <section class="community">
+        <div class="container">
+            <h2 class="community-title">Присоединяйтесь к сообществу</h2>
+            <p class="community-subtitle">Станьте частью активного сообщества экспертов и пользователей. Задавайте вопросы, делитесь знаниями и помогайте другим.</p>
+
+            <div class="community-stats">
+                <div class="community-stat">
+                    <span class="community-stat-number">127</span>
+                    <span class="community-stat-label">Ответов сегодня</span>
+                </div>
+                
+                <div class="community-stat">
+                    <span class="community-stat-number">43</span>
+                    <span class="community-stat-label">Новых пользователей</span>
+                </div>
+                
+                <div class="community-stat">
+                    <span class="community-stat-number">18</span>
+                    <span class="community-stat-label">Онлайн экспертов</span>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-white">Присоединиться к сообществу</a>
+        </div>
+    </section>
+
+    <!-- SEO блок -->
+    <section class="seo">
+        <div class="container">
+            <h2 class="seo-title">СуперОтвет — ваш надежный источник знаний</h2>
+
+            <div class="seo-content">
+                <p>СуперОтвет.ru — это платформа вопросов и ответов, где каждый может получить квалифицированную помощь от экспертов и сообщества. Мы создали удобное пространство для обмена знаниями, где вы можете задать вопрос на любую тему и получить проверенный ответ.</p>
+
+                <p>Наше сообщество объединяет специалистов из разных областей: преподавателей, IT-профессионалов, врачей, юристов, бизнес-консультантов и многих других. Все эксперты проходят верификацию, что гарантирует высокое качество ответов.</p>
+
+                <div class="seo-more">
+                    <a href="#" class="link-blue">
+                        Узнать больше о проекте
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe-container">
+                <h3 class="subscribe-title">Подпишитесь на новости и обновления</h3>
+                <p class="subscribe-text">Получайте еженедельную подборку лучших вопросов и ответов</p>
+
+                <div class="subscribe-form">
+                    <input type="email" class="subscribe-input" placeholder="Ваш email">
+                    <button class="btn btn-primary">Подписаться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon logo-icon-small">
+                            <div class="logo-question">?</div>
+                            <div class="logo-check logo-check-small">✓</div>
+                        </div>
+                        <h3 class="footer-logo-text">СуперОтвет</h3>
+                    </div>
+                    <p class="footer-description">Платформа вопросов и ответов с экспертным сообществом</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Категории</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Учеба и образование</a></li>
+                        <li><a href="#" class="footer-link">Технологии и IT</a></li>
+                        <li><a href="#" class="footer-link">Здоровье и медицина</a></li>
+                        <li><a href="#" class="footer-link">Бизнес и финансы</a></li>
+                        <li><a href="#" class="footer-link">Дом и быт</a></li>
+                        <li><a href="#" class="footer-link">Досуг и развлечения</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">О проекте</a></li>
+                        <li><a href="#" class="footer-link">Правила сервиса</a></li>
+                        <li><a href="#" class="footer-link">Политика конфиденциальности</a></li>
+                        <li><a href="#" class="footer-link">Для экспертов</a></li>
+                        <li><a href="#" class="footer-link">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-subscribe">
+                    <h4 class="footer-heading">Подписка</h4>
+                    <p class="footer-subscribe-text">Подпишитесь на нашу рассылку, чтобы получать новости и обновления</p>
+                    <div class="footer-subscribe-form">
+                        <input type="email" class="footer-subscribe-input" placeholder="Ваш email">
+                        <button class="btn btn-orange btn-sm">OK</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 СуперОтвет.ru — Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
